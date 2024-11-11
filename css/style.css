@@ -1,0 +1,338 @@
+/********** Template CSS **********/
+:root {
+    --primary: #E88F2A;
+    --secondary: #FAF3EB;
+    --light: #FFFFFF;
+    --dark: #2B2825;
+}
+
+.text-primary{
+    color: var(--primary);
+}
+
+.font-secondary {
+    font-family: 'Pacifico', cursive;
+}
+
+h1,
+h2,
+.font-weight-bold {
+    font-weight: 700 !important;
+}
+
+h3,
+h4,
+.font-weight-semi-bold {
+    font-weight: 600 !important;
+}
+
+h5,
+h6,
+.font-weight-medium {
+    font-weight: 500 !important;
+}
+
+.btn {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    transition: .5s;
+}
+
+.btn-primary {
+    color: #FFFFFF;
+}
+
+.border-inner {
+    position: relative;
+}
+
+.border-inner * {
+    position: relative;
+    z-index: 1;
+}
+
+.border-inner::before {
+    position: absolute;
+    content: "";
+    top: 10px;
+    right: 10px;
+    bottom: 10px;
+    left: 10px;
+    background: none;
+    border: 1px solid var(--light);
+    z-index: 0;
+}
+
+.btn-square {
+    width: 40px;
+    height: 40px;
+}
+
+.btn-sm-square {
+    width: 30px;
+    height: 30px;
+}
+
+.btn-lg-square {
+    width: 50px;
+    height: 50px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+}
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 30px;
+    bottom: 0;
+    border-radius: 0;
+    z-index: 99;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    font-family: 'Oswald', sans-serif;
+    padding: 30px 15px;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--light);
+    outline: none;
+    transition: .5s;
+}
+
+.sticky-top.navbar-dark .navbar-nav .nav-link {
+    padding: 20px 15px;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+    color: var(--primary);
+}
+
+@media (max-width: 991.98px) {
+    .navbar-dark .navbar-nav .nav-link  {
+        padding: 10px 0;
+    }
+}
+
+.section-title::before {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 10px;
+    left: 50%;
+    bottom: 0;
+    margin-left: -30px;
+    background: var(--primary);
+}
+
+.section-title::after {
+    position: absolute;
+    content: "";
+    width: 180px;
+    height: 2px;
+    left: 50%;
+    bottom: 4px;
+    margin-left: -90px;
+    background: var(--primary);
+}
+
+.service::after,
+
+
+.bg-img {
+    background: linear-gradient(rgba(43, 40, 37, .5), rgba(43, 40, 37, .5)), url(../assets/img/bg.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+#bgLogReg{
+    background: url("../assets/img/bgLogReg.jpg");
+    background-size: cover;
+    background-position: bottom;
+    padding-top: 80px;
+    padding-bottom: 150px;
+}
+
+#backLogReg {
+    margin: 0px auto;
+    padding: 0px auto;
+}
+
+#btnLogin{
+    background-color: var(--primary);
+}
+
+#regSubmit {
+    background-color: var(--primary);
+}
+
+.bg-footer{
+        background: linear-gradient(rgba(109, 95, 82, 0.5), rgba(222, 141, 59, 0.676));
+        background-size: cover;
+}
+
+#postDiv{
+    margin-right: 0px;
+}
+
+#postImgFull{
+    width: 200px;
+    height: 100px;
+}
+
+#postText{
+    line-height: 1.85em;
+    font-size: large;
+    color: black;
+    margin: 0px auto;
+    padding: 0px auto;
+}
+
+#postText p{
+    word-wrap: break-word;
+}
+
+
+#admin {
+    font-size: 16px;
+}
+
+#sidebar{
+    height: 100%;
+}
+
+#sidebarText{
+    background: linear-gradient(rgba(193, 172, 152, 0.5), rgba(222, 141, 59, 0.676));
+}
+
+#sidebar h4{
+    font-size: medium;
+}
+
+.postList {
+    width: 100%;
+    height: 100%;
+}
+
+.full{
+    width: 100% !important;
+}
+
+/* Style for the modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Style for the modal content */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+    max-width: 500px;
+}
+
+/* Style for the close button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.comment-section {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    background-color: #f9f9f9;
+}
+
+.comment-section h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.comment-section .comment {
+    margin-bottom: 20px;
+}
+
+.comment-section .comment .author {
+    font-weight: bold;
+}
+
+.comment-section .comment .timestamp {
+    font-style: italic;
+    color: #888;
+}
+
+.comment-section .comment .content {
+    margin-top: 5px;
+}
+
+.comment-section .comment .actions {
+    margin-top: 10px;
+}
+
+.comment-section .comment .actions button {
+    margin-right: 10px;
+    padding: 5px 10px;
+    border: 1px solid black;
+    background-color: #f5f5f5;
+    color: #333;
+    cursor: pointer;
+}
+
+.comment-section .comment .actions .upvote:hover{
+    background-color:rgb(34, 192, 34);
+}
+.comment-section .comment .actions .downvote:hover {
+    background-color: rgb(173, 118, 24);
+}
+
+footer{
+    bottom: 0;
+}
+
+.centriraj{
+    margin: 0px auto;
+    padding: 0px auto;
+}
+
+@media (max-width: 768px) {
+    .postClassPage {
+        flex-direction: column !important;
+    }
+    #postText{
+        font-size: small !important;
+    }
+    .postClassPage .col-lg-12 .d-flex{
+        padding: 15px !important;
+    }
+}
+
+.row{
+    --bs-gutter-x: 0;
+}
